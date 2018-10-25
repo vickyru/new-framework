@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 50.323 s <<< FAILURE! - in TestSuite
+LoginSuccessTC(hackathon.demo.TestClass)  Time elapsed: 31.138 s  <<< FAILURE!
+java.lang.UnsupportedOperationException: Cannot convert 'PASSED_ONLY' to com.automation.remarks.video.enums.VideoSaveMode
+Caused by: java.lang.IllegalArgumentException: No enum constant com.automation.remarks.video.enums.VideoSaveMode.PASSED_ONLY
+
+LoginFailTC(hackathon.demo.TestClass)  Time elapsed: 3.108 s  <<< FAILURE!
+java.lang.AssertionError: expected [Nielsen Studio] but found [Nielsen Studio » Log in]
+	at hackathon.demo.TestClass.LoginFailTC(TestClass.java:47)
+

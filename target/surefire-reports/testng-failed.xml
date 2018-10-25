@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Hackathon-Demo]">
+  <listeners>
+    <listener class-name="list.MyListener"/>
+  </listeners>
+  <test name="Write new post(failed)">
+    <classes>
+      <class name="hackathon.demo.TestClass">
+        <methods>
+          <include name="LoginFailTC"/>
+          <include name="LoginSuccessTC"/>
+        </methods>
+      </class> <!-- hackathon.demo.TestClass -->
+    </classes>
+  </test> <!-- Write new post(failed) -->
+</suite> <!-- Failed suite [Hackathon-Demo] -->

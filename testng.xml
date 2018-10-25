@@ -1,0 +1,15 @@
+<suite name="Hackathon-Demo" verbose="10">
+<listeners>
+<listener class-name="list.MyListener"></listener>
+</listeners>
+  <test name="Write new post" preserve-order="true">
+    <classes>
+      <class name="hackathon.demo.TestClass">
+        <methods>
+          <include name="LoginSuccessTC" />
+          <include name="LoginFailTC" />
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>
