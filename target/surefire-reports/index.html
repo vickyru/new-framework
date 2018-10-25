@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 2 failed,   </span>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -104,12 +104,21 @@
                         <a href="#" class="method navigator-link" panel-name="suite-Hackathon-Demo" title="hackathon.demo.TestClass" hash-for-method="LoginFailTC">LoginFailTC</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                    </div> <!-- method-list-content failed suite-Hackathon-Demo -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Hackathon-Demo" class="hide-methods passed suite-Hackathon-Demo"> (hide)</a> <!-- hide-methods passed suite-Hackathon-Demo -->
+                      <a href="#" panel-name="suite-Hackathon-Demo" class="show-methods passed suite-Hackathon-Demo"> (show)</a> <!-- show-methods passed suite-Hackathon-Demo -->
+                    </span>
+                    <div class="method-list-content passed suite-Hackathon-Demo">
                       <span>
-                        <img width="3%" src="failed.png"/>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Hackathon-Demo" title="hackathon.demo.TestClass" hash-for-method="LoginSuccessTC">LoginSuccessTC</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Hackathon-Demo -->
+                    </div> <!-- method-list-content passed suite-Hackathon-Demo -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -180,83 +189,25 @@
 (Invalid login scenerio with wrong username & password)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Hackathon-Demo-class-failed -->
+          <div class="suite-Hackathon-Demo-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">hackathon.demo.TestClass</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="LoginSuccessTC">
                   </a> <!-- LoginSuccessTC -->
                   <span class="method-name">LoginSuccessTC</span>
-                  <div class="stack-trace"><b>"java.lang.UnsupportedOperationException: Cannot convert &apos;PASSED_ONLY&apos; to com.automation.remarks.video.enums.VideoSaveMode
-	at org.aeonbits.owner.Util.unsupported(Util.java:128)
-	at org.aeonbits.owner.Converters.unsupportedConversion(Converters.java:276)
-	at org.aeonbits.owner.Converters.access$200(Converters.java:42)
-	at org.aeonbits.owner.Converters$4.tryConvert(Converters.java:160)
-	at org.aeonbits.owner.Converters.doConvert(Converters.java:268)
-	at org.aeonbits.owner.Converters.convert(Converters.java:263)
-	at org.aeonbits.owner.PropertiesInvocationHandler.resolveProperty(PropertiesInvocationHandler.java:87)
-	at org.aeonbits.owner.PropertiesInvocationHandler.invoke(PropertiesInvocationHandler.java:67)
-	at com.sun.proxy.$Proxy9.saveMode(Unknown Source)
-	at com.automation.remarks.video.RecordingUtils.doVideoProcessing(RecordingUtils.java:25)
-	at com.automation.remarks.testng.VideoListener.onTestSuccess(VideoListener.java:36)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
-Caused by: java.lang.IllegalArgumentException: No enum constant com.automation.remarks.video.enums.VideoSaveMode.PASSED_ONLY
-	at java.lang.Enum.valueOf(Enum.java:238)
-	at com.sun.beans.editors.EnumEditor.setAsText(EnumEditor.java:102)
-	at org.aeonbits.owner.Converters$4.tryConvert(Converters.java:157)
-	... 31 more
-... Removed 18 stack frames<br/> java.lang.UnsupportedOperationException: Cannot convert &apos;PASSED_ONLY&apos; to com.automation.remarks.video.enums.VideoSaveMode
-	at org.aeonbits.owner.Util.unsupported(Util.java:128)
-	at org.aeonbits.owner.Converters.unsupportedConversion(Converters.java:276)
-	at org.aeonbits.owner.Converters.access$200(Converters.java:42)
-	at org.aeonbits.owner.Converters$4.tryConvert(Converters.java:160)
-	at org.aeonbits.owner.Converters.doConvert(Converters.java:268)
-	at org.aeonbits.owner.Converters.convert(Converters.java:263)
-	at org.aeonbits.owner.PropertiesInvocationHandler.resolveProperty(PropertiesInvocationHandler.java:87)
-	at org.aeonbits.owner.PropertiesInvocationHandler.invoke(PropertiesInvocationHandler.java:67)
-	at com.sun.proxy.$Proxy9.saveMode(Unknown Source)
-	at com.automation.remarks.video.RecordingUtils.doVideoProcessing(RecordingUtils.java:25)
-	at com.automation.remarks.testng.VideoListener.onTestSuccess(VideoListener.java:36)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1899)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:778)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
-Caused by: java.lang.IllegalArgumentException: No enum constant com.automation.remarks.video.enums.VideoSaveMode.PASSED_ONLY
-	at java.lang.Enum.valueOf(Enum.java:238)
-	at com.sun.beans.editors.EnumEditor.setAsText(EnumEditor.java:102)
-	at org.aeonbits.owner.Converters$4.tryConvert(Converters.java:157)
-	... 31 more
-"</b><br>org.aeonbits.owner.Util.unsupported(Util.java:128)<br>org.aeonbits.owner.Converters.unsupportedConversion(Converters.java:276)<br>org.aeonbits.owner.Converters.access$200(Converters.java:42)<br>org.aeonbits.owner.Converters$4.tryConvert(Converters.java:160)<br>org.aeonbits.owner.Converters.doConvert(Converters.java:268)<br>org.aeonbits.owner.Converters.convert(Converters.java:263)<br>org.aeonbits.owner.PropertiesInvocationHandler.resolveProperty(PropertiesInvocationHandler.java:87)<br>org.aeonbits.owner.PropertiesInvocationHandler.invoke(PropertiesInvocationHandler.java:67)<br>com.sun.proxy.$Proxy9.saveMode(Unknown Source)<br>com.automation.remarks.video.RecordingUtils.doVideoProcessing(RecordingUtils.java:25)<br>com.automation.remarks.testng.VideoListener.onTestSuccess(VideoListener.java:36)<br>org.testng.internal.Invoker.runTestListeners(Invoker.java:1899)<br>org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:778)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)<br>org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)<br>org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)<br>org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)<br>org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)<br>org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)<br>
-</div> <!-- stack-trace -->
                   <em>
 (Valid login scenerio with authenticate username & password)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Hackathon-Demo-class-failed -->
+          </div> <!-- suite-Hackathon-Demo-class-passed -->
         </div> <!-- panel Hackathon-Demo -->
         <div panel-name="test-xml-Hackathon-Demo" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -321,16 +272,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'LoginSuccessTC')
 data.setCell(0, 2, 'hackathon.demo.TestClass')
-data.setCell(0, 3, 31387);
+data.setCell(0, 3, 30962);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'LoginFailTC')
 data.setCell(1, 2, 'hackathon.demo.TestClass')
-data.setCell(1, 3, 2262);
+data.setCell(1, 3, 3472);
 window.suiteTableData['Hackathon-Demo']= { tableData: data, tableDiv: 'times-div-Hackathon-Demo'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 33 seconds</span>
+              <span class="suite-total-time">Total running time: 34 seconds</span>
               <div id="times-div-Hackathon-Demo">
               </div> <!-- times-div-Hackathon-Demo -->
             </div> <!-- times-div -->
@@ -365,7 +316,7 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">LoginFailTC</span>
-                <span class="method-start">32826 ms</span>
+                <span class="method-start">31417 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

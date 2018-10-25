@@ -9,7 +9,6 @@
       <class name="hackathon.demo.TestClass">
         <methods>
           <include name="LoginFailTC"/>
-          <include name="LoginSuccessTC"/>
         </methods>
       </class> <!-- hackathon.demo.TestClass -->
     </classes>

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Write new post</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Oct 25 15:22:53 IST 2018</td>
+<td>Started on:</td><td>Thu Oct 25 15:39:28 IST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>48 seconds (48979 ms)</td>
+<tr><td>Total time:</td><td>45 seconds (45805 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -84,8 +84,8 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
-... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace159190022", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace159190022'><pre>java.lang.AssertionError: expected [Nielsen Studio] but found [Nielsen Studio » Log in]
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1607458416", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1607458416'><pre>java.lang.AssertionError: expected [Nielsen Studio] but found [Nielsen Studio » Log in]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:494)
 	at org.testng.Assert.assertEquals(Assert.java:123)
@@ -120,77 +120,20 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
 </pre></div></td>
-<td>2</td>
+<td>3</td>
 <td>hackathon.demo.TestClass@47f6473</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
 <td title='hackathon.demo.TestClass.LoginSuccessTC()'><b>LoginSuccessTC</b><br>Test class: hackathon.demo.TestClass<br>Test method: Valid login scenerio with authenticate username & password</td>
-<td><div><pre>java.lang.UnsupportedOperationException: Cannot convert &apos;PASSED_ONLY&apos; to com.automation.remarks.video.enums.VideoSaveMode
-	at org.aeonbits.owner.Util.unsupported(Util.java:128)
-	at org.aeonbits.owner.Converters.unsupportedConversion(Converters.java:276)
-	at org.aeonbits.owner.Converters.access$200(Converters.java:42)
-	at org.aeonbits.owner.Converters$4.tryConvert(Converters.java:160)
-	at org.aeonbits.owner.Converters.doConvert(Converters.java:268)
-	at org.aeonbits.owner.Converters.convert(Converters.java:263)
-	at org.aeonbits.owner.PropertiesInvocationHandler.resolveProperty(PropertiesInvocationHandler.java:87)
-	at org.aeonbits.owner.PropertiesInvocationHandler.invoke(PropertiesInvocationHandler.java:67)
-	at com.sun.proxy.$Proxy9.saveMode(Unknown Source)
-	at com.automation.remarks.video.RecordingUtils.doVideoProcessing(RecordingUtils.java:25)
-	at com.automation.remarks.testng.VideoListener.onTestSuccess(VideoListener.java:36)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
-Caused by: java.lang.IllegalArgumentException: No enum constant com.automation.remarks.video.enums.VideoSaveMode.PASSED_ONLY
-	at java.lang.Enum.valueOf(Enum.java:238)
-	at com.sun.beans.editors.EnumEditor.setAsText(EnumEditor.java:102)
-	at org.aeonbits.owner.Converters$4.tryConvert(Converters.java:157)
-	... 31 more
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1757032717", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1757032717'><pre>java.lang.UnsupportedOperationException: Cannot convert &apos;PASSED_ONLY&apos; to com.automation.remarks.video.enums.VideoSaveMode
-	at org.aeonbits.owner.Util.unsupported(Util.java:128)
-	at org.aeonbits.owner.Converters.unsupportedConversion(Converters.java:276)
-	at org.aeonbits.owner.Converters.access$200(Converters.java:42)
-	at org.aeonbits.owner.Converters$4.tryConvert(Converters.java:160)
-	at org.aeonbits.owner.Converters.doConvert(Converters.java:268)
-	at org.aeonbits.owner.Converters.convert(Converters.java:263)
-	at org.aeonbits.owner.PropertiesInvocationHandler.resolveProperty(PropertiesInvocationHandler.java:87)
-	at org.aeonbits.owner.PropertiesInvocationHandler.invoke(PropertiesInvocationHandler.java:67)
-	at com.sun.proxy.$Proxy9.saveMode(Unknown Source)
-	at com.automation.remarks.video.RecordingUtils.doVideoProcessing(RecordingUtils.java:25)
-	at com.automation.remarks.testng.VideoListener.onTestSuccess(VideoListener.java:36)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1899)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:778)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
-Caused by: java.lang.IllegalArgumentException: No enum constant com.automation.remarks.video.enums.VideoSaveMode.PASSED_ONLY
-	at java.lang.Enum.valueOf(Enum.java:238)
-	at com.sun.beans.editors.EnumEditor.setAsText(EnumEditor.java:102)
-	at org.aeonbits.owner.Converters$4.tryConvert(Converters.java:157)
-	... 31 more
-</pre></div></td>
-<td>31</td>
+<td></td>
+<td>30</td>
 <td>hackathon.demo.TestClass@47f6473</td></tr>
 </table><p>
 </body>

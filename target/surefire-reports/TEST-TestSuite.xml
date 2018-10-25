@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="50.323" tests="2" errors="0" skipped="0" failures="2">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="47.073" tests="2" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_181\jre\bin"/>
@@ -64,39 +64,17 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="LoginSuccessTC" classname="hackathon.demo.TestClass" time="31.138">
-    <failure message="Cannot convert &apos;PASSED_ONLY&apos; to com.automation.remarks.video.enums.VideoSaveMode" type="java.lang.UnsupportedOperationException">java.lang.UnsupportedOperationException: Cannot convert 'PASSED_ONLY' to com.automation.remarks.video.enums.VideoSaveMode
-Caused by: java.lang.IllegalArgumentException: No enum constant com.automation.remarks.video.enums.VideoSaveMode.PASSED_ONLY
-</failure>
-    <system-out><![CDATA[...
-... TestNG 6.8beta 20120825_1010 by C?dric Beust (cedric@beust.com)
-...
-
-on start
-2018-10-25 15:23:06 INFO  MonteRecorder:39 - Recording started
-on test start
-2018-10-25 15:23:37 INFO  MonteRecorder:45 - Recording finished to C:\Users\prashantt\Eclipse_Workspace\Hackathon\demo\video\Login Pass Test_recording_2018_25_10_15_23_37.avi
-2018-10-25 15:23:37 INFO  RecordingUtils:65 - No jenkins_url variable found.
-2018-10-25 15:23:37 INFO  MonteRecorder:45 - Recording finished to C:\Users\prashantt\Eclipse_Workspace\Hackathon\demo\video\Login Pass Test_recording_2018_25_10_15_23_37.avi
-2018-10-25 15:23:37 INFO  RecordingUtils:65 - No jenkins_url variable found.
-2018-10-25 15:23:37 INFO  RecordingUtils:26 - Video recording: C:\Users\prashantt\Eclipse_Workspace\Hackathon\demo\video\Login Pass Test_recording_2018_25_10_15_23_37.avi
-]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a) on port 34010
-Only local connections are allowed.
-Oct 25, 2018 3:22:58 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: OSS
-]]></system-err>
-  </testcase>
-  <testcase name="LoginFailTC" classname="hackathon.demo.TestClass" time="3.108">
+  <testcase name="LoginSuccessTC" classname="hackathon.demo.TestClass" time="31.102"/>
+  <testcase name="LoginFailTC" classname="hackathon.demo.TestClass" time="4.087">
     <failure message="expected [Nielsen Studio] but found [Nielsen Studio » Log in]" type="java.lang.AssertionError">java.lang.AssertionError: expected [Nielsen Studio] but found [Nielsen Studio » Log in]
 	at hackathon.demo.TestClass.LoginFailTC(TestClass.java:47)
 </failure>
-    <system-out><![CDATA[on test failure
-2018-10-25 15:23:38 INFO  MonteRecorder:39 - Recording started
+    <system-out><![CDATA[on test success
+2018-10-25 15:40:09 INFO  MonteRecorder:39 - Recording started
 on test start
-2018-10-25 15:23:41 INFO  MonteRecorder:45 - Recording finished to C:\Users\prashantt\Eclipse_Workspace\Hackathon\demo\video\Login Fail Test_recording_2018_25_10_15_23_41.avi
-2018-10-25 15:23:41 INFO  RecordingUtils:65 - No jenkins_url variable found.
-2018-10-25 15:23:41 INFO  RecordingUtils:26 - Video recording: C:\Users\prashantt\Eclipse_Workspace\Hackathon\demo\video\Login Fail Test_recording_2018_25_10_15_23_41.avi
+2018-10-25 15:40:13 INFO  MonteRecorder:45 - Recording finished to C:\Users\prashantt\Eclipse_Workspace\Hackathon\demo\video\Login Fail Test_recording_2018_25_10_15_40_13.avi
+2018-10-25 15:40:13 INFO  RecordingUtils:65 - No jenkins_url variable found.
+2018-10-25 15:40:13 INFO  RecordingUtils:26 - Video recording: C:\Users\prashantt\Eclipse_Workspace\Hackathon\demo\video\Login Fail Test_recording_2018_25_10_15_40_13.avi
 ]]></system-out>
   </testcase>
 </testsuite>
